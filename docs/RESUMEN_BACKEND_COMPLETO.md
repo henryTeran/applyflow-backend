@@ -452,7 +452,7 @@ pytest tests/ --cov=app --cov-report=html
 ```bash
 # App
 DEBUG=True
-SECRET_KEY=P0sAbXjsysxuOiMOOkaFTCFbOt2d9LbHrYn3UKP_eRtIS_PJ15ZhVVhLiZT07_VLBlBXdwcieFT-lNjJenHh7w
+SECRET_KEY=REPLACE_ME
 
 # Database
 DATABASE_URL=postgresql://postgres:postgres@localhost:5432/applyflow
