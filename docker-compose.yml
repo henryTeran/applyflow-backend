@@ -1,0 +1,113 @@
+# Docker Compose configuration for ApplyFlow
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  db:
+    image: postgres:15-alpine
+    container_name: applyflow_db
+    environment:
+      POSTGRES_USER: applyflow_user
+      POSTGRES_PASSWORD: applyflow_password
+      POSTGRES_DB: applyflow_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U applyflow_user -d applyflow_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis for Celery and Rate Limiting
+  redis:
+    image: redis:7-alpine
+    container_name: applyflow_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  # FastAPI Application
+  web:
+    build: .
+    container_name: applyflow_web
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - .:/app
+      - uploads:/app/uploads
+      - generated_docs:/app/generated_docs
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://applyflow_user:applyflow_password@db:5432/applyflow_db
+      - REDIS_URL=redis://redis:6379/0
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - SMTP_FROM=${SMTP_FROM}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - SECRET_KEY=${SECRET_KEY:-your-secret-key-change-in-production}
+      - DEBUG=True
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Celery Worker for Background Tasks
+  celery_worker:
+    build: .
+    container_name: applyflow_celery_worker
+    command: celery -A app.celery_app worker --loglevel=info --concurrency=2
+    volumes:
+      - .:/app
+      - uploads:/app/uploads
+      - generated_docs:/app/generated_docs
+    environment:
+      - DATABASE_URL=postgresql://applyflow_user:applyflow_password@db:5432/applyflow_db
+      - REDIS_URL=redis://redis:6379/0
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - SMTP_FROM=${SMTP_FROM}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - SECRET_KEY=${SECRET_KEY:-your-secret-key-change-in-production}
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+
+  # Celery Beat for Scheduled Tasks
+  celery_beat:
+    build: .
+    container_name: applyflow_celery_beat
+    command: celery -A app.celery_app beat --loglevel=info
+    volumes:
+      - .:/app
+    environment:
+      - DATABASE_URL=postgresql://applyflow_user:applyflow_password@db:5432/applyflow_db
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - db
+      - redis
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+  uploads:
+  generated_docs:

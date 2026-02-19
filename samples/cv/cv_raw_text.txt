@@ -1,0 +1,174 @@
+﻿Henry TERAN CORRALES  
+Swiss â€“ 05.04.1989  
+Chemin  du Petit-Montfleury  22  
+1290  Versoix  
++41 (0) 78 692 16 88  
+teranhenryc@gmail.com    
+https://github.com/henryTeran  
+Full Stack software developer   
+FR â€“ SPA â€“ ENG â€“ IT 
+Full-Stack Software Developer holding  an engineer ing degree in microtechnics  and electronic design. Certified in modern 
+web development technologies including React.js, Angular, Firebase, and Python -based tools. Experienced in building 
+end-to-end applications for medical platforms, customer service systems, and e -commerce sites. Combines analytical skills 
+with creativity to develop user -centric solutions. Proven ability to manage full project lifecycles, automate processes, and 
+deliver scalable, maintainable software. Multilingual communicator with a collaborative mindset and a con tinuous learning 
+attitude.  
+    COMPETENCIES      
+ 
+    EXPERIENCE      
+EIC2 SA  - Perly -Certoux, Geneva  05/2021 - 11/2023    
+Full-Stack Software developer and automation developer  
+â€¢ Result : Reduced invoicing time from three weeks to just a few minutes  through a fully automated software 
+(testing, billing, discounts, eBill)  
+JetPack Aviation - Freelance  - Geneva  04/2020 - 07/2020  
+Speeder dynamics and controls  
+IHEID, Topnet  - Geneva  01/2019 - 03/2020  
+Logisti cs Technician  â€“ VBA Developer  
+â€¢ Result: Shortened the ordering process from two weeks to 3 â€“4 days  with an automated stock management 
+tool. 
+ARYE S Ã rl - Geneva  03/2017 - 11/2017  
+PCB Designer   
+â€¢ Result:  Achieved twice faster prototype validation  by designing and testing reliable PCB boards  SOFT SKILLS  IT SKILLS  
+ 
+Strong problem -solving abilities , with a proven capacity 
+to deliver quick and long -lasting solutions . 
+ 
+Logical and structured approach  to designing computer 
+programs and ergonomic solutions.  
+ 
+Fast and autonomous learner , with a natural aptitude for 
+acquiring new skills efficiently.  
+ 
+Easily adaptable  to new environments, both 
+independently and within a team . 
+ 
+Customer -oriented mindset , with commercial skills 
+focused on client satisfaction and support.  
+ 
+Highly productive , able to maintain uninterrupted 
+concentration over extended periods.  
+ 
+Resilient under pressure , with the ability to take a step 
+back and remain effective in challenging situations.  
+ 
+Efficient time management , ensuring deadlines are 
+consistently met.  
+ 
+Strong work ethic and positive mindset , fostering a 
+collaborative and achievement -driven workplace.   
+  Frontend Development  
+â€¢ React.js, Angular , Flask , javaScript , TypeScript, 
+HTLM5, CSS3   
+â€¢ Reponsive design, Tailwind, Vite, Vanilla  JS 
+Backend Development & APIs  
+â€¢ Java,  Python  (data  processing , backend apps , 
+machine learning process:  Numpy, Pandas ), Node.js  
+â€¢ RESTful APIs  
+â€¢ Firebase (Authentication, Firestore, Cloud Functions),  
+â€¢ OpenAI  API Integration  
+Testing  
+â€¢ Unit & Integration Testing (Jest,  Mocha, Cypress .)  
+Full-Stack Tools & DevOps  
+â€¢ Git, Gitlab, CI/CD (GitHub  Actions, Bamboo ) 
+â€¢ Docker , Kibana, Grafana  
+â€¢ Visual Studio Code,  Eclipse, P ostman   
+â€¢ Firebase Hosting & Deployment  
+Automation & RPA  
+â€¢ Robotic Process Automation  (RPA Advanced 
+Certification ) 
+â€¢ Scripting  
+Databases  & Application Development  
+â€¢ SQL (PostgreSQL , MySQL,  SQLite,  HFSQL ) 
+â€¢ NoSQL (MongoDB, Firebase  Firestore  
+â€¢ Windev,  Webdev,  Windev Mobile  
+Mobile & Cross -Platform Development   
+â€¢ Android SDK , Ionic Framework   
+
+--- PAGE BREAK ---
+    PROJECTS      
+ZIGOMA ERP  â€“ Intelligent modular ERP for SMEs  
+Technologies: OpenAI API, Flask, Pandas, NumPy, Firestore, Jinja2, TailwindCSS,  
+â€¢ Full-featured ERP system including CRM, product and stock management, invoicing 
+(quotes, orders, delivery notes, invoices), and built -in AI for automated document 
+generation. Includes dynamic dashboards with real -time KPIs, multi -company 
+support, PDF previ ews, and clean modular MVC -S architecture.  
+WellSync  â€“ Smart mobile well -being application  
+Technologies: Angular 19, Ionic, Firebase (Auth, Firestore, Cloud Functions), OpenAI GPT -
+4o, Luxand API  
+â€¢ AI-powered app for tracking emotions, nutrition, fitness, and self -care. Features 
+dynamic diagnostic forms, personalized recommendations, contextual AI chatbot, 
+smart notifications, anonymous mode, and secure user role system.  
+HealthSync  â€“ Medical monitoring platform for patients and doctors  
+Technologies: React, Firebase, TailwindCSS, EmailJS , Compendium API  
+â€¢ Handles treatment tracking, medication reminders, prescription PDF generation, 
+secure chat, symptom tracking with dynamic charts, weather -based insights, and 
+Compendium.ch integration. Supports both patient and doctor dashboards.  
+BeautyBooker  â€“ Booking Platform for Aesthetic Treatments  
+Technologies: React, Firebase  
+â€¢ Enables appointment booking with smart diagnostic forms, automated reminders, and 
+a user -friendly interface for managing beauty treatments.  
+SelfServiceDesk  â€“ Mobile Ordering System (fast -food style)  
+Technologies: Angular, Ionic  
+â€¢ Mobile kiosk application allowing item selection, customization, and confirmation 
+through a smooth and intuitive user experience.  
+FromDeepestRecord  â€“ Multilingual showcase websites for a music label  
+Technologies: React.js, Vite, TailwindCSS, i18n  
+â€¢ Stylish underground -themed websites featuring album/artist management, 
+multilingual navigation (EN/FR/ES), wishlist, filtering, and responsive layout.  2025 /05 â€“ 06/2025  
+ 
+ 
+ 
+ 
+ 
+ 
+03/2025 â€“ 05/2025  
+ 
+ 
+ 
+ 
+ 
+01/2025 â€“ 03/2025  
+ 
+ 
+ 
+ 
+ 
+09/2024 â€“ 12/2024  
+ 
+ 
+ 
+05/2024 â€“ 08/2024  
+ 
+ 
+ 
+ 
+01/2024 â€“ 05/2024  
+ 
+ 
+ 
+    EDUCATION      
+Full-Stack Developer Diploma  2025  
+With Distinction (Grade: 5.6 / 6)   
+Nomades  Advanced -Technologies â€“ Geneva, Switzerland  
+880-hour training (35 ECTS) covering:  
+â€¢ Front -End Development: JavaScript, TypeScript, Angular, React, Ionic  
+â€¢ Back -End Development: Python, Flask, Firebase  
+â€¢ Progressive Web Apps, DevOps, Git  
+Certificates earned during the program:  
+â€¢ Python Programming Language â€“ Grade: 6/6  with jury  honors  
+â€¢ Mobile Web Application Developer â€“ Grade: 5.6/6  
+â€¢ Web Programmer Certificate â€“ Grade: 5.3/6  
+Gateway  HES Master : Section Microtechni cs  2026 - 2018   
+Ecole Polytechnique FÃ©dÃ©rale de Lausanne  (EPFL ) - Lausanne  
+Bachelo râ€™s degre e: Engineer  in Microtechni cs. Specialization  in Electroni c Desi gn 2013 - 2016   
+(HES -SO HEPIA)  - Geneva 
+Certificat fÃ©dÃ©ral de capacitÃ©  : CFC Electroni cs & MaturitÃ© professionnelle  2009 - 2012   
+Centre de Formation Professionnel le Technique - Geneva  
+    AWARD S       
+2nd Place in Microtechnic s Competition  
+Event: Hepia HES, Geneva 2013  
+Objective: Designed an autonomous robot to navigate a steep 60 -degree incline, reach the summit swiftly, and stabilize 
+effectively.  
+1st Place in Electronic s Competition  
+Event: CFPT, Geneva 2010  
+Objective:  Developed an autonomous robot capable of completing multiple optimal courses to maximize scoring points.  
